@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Event</title>
+    <script src="practice1.js"></script>
+</head>
+ 
+<body>
+<form name="myForm" onsubmit = "return(validate());">
+<table width="700px">
+<tr>
+<td>
+    <label for="type">Event Type: </label>
+</td>     
+<td>
+    <select id="EType">
+            <option value="choose">-</option>
+            <option value="one">Type #1</option>
+            <option value="two">Type #2</option>
+            <option value="three">Type #3</option>   
+    </select>
+</td>
+</tr>
+
+<br>
+<br>
+
+<tr>
+<td><br>
+    <label for="title">Event Title: </label>
+</td>
+<td><br>
+    <input type="text" name="ETitle" size="70">
+</td>
+</tr>
+
+<tr>
+    <td><br>
+    <label for="dates">Event Dates: </label>
+</td> 
+<td><br>
+    <input type="date" name="firstdate" size="10"> &nbsp; to &nbsp; <input type="date" name="seconddate" size="10">
+</td>
+</tr>
+
+<tr>
+    <td><br>
+        <label for="pdate">Posting Date: </label>
+    </td>
+    <td><br>
+        <input type="date" name="postdate" size="10">
+</td>
+</tr>
+</table>
+
+<br>
+
+<table width="700px">
+<tr>
+    <td>
+        <input type="checkbox" value="question1">
+        <label for="Q1"> Is Registration Required?</label><br>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="checkbox" value="question2">
+        <label for="Q2"> Is this event associated with any Faimily Programs?</label><br>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="checkbox" value="question3">
+        <label for="Q3">Upon Registration Completion, Are Users to Receive an Auto-Generated Email?</label><br>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="checkbox" value="question4">
+        <label for="Q4">Is There a Point of Contact?</label><br>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="checkbox" value="question5">
+        <label for="Q5">Is There a Hosting Command Point of Contact?</label><br>
+    </td>
+</tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <div class = "buttons"></div>
+    <input type="submit" id="btn_s" value="Save"></button> &nbsp; &nbsp; &nbsp; &nbsp;    
+    <input type="reset" id="btn_i" value="Cancel"></button>
+</div>
+</form>
+</body>
+</html>
